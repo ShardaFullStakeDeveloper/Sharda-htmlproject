@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            background-color: whitesmoke;
+            height: 90vh;
+            width: 40vw;
+            display: grid;
+            grid-template-rows: 1fr 4fr;
+            margin-left: 30%;
+            margin-top: 5px;
+        }
+
+        .one {
+            background-color: #EEEDEB;
+            border-style: solid;
+            border-width: 1px;
+            text-align: right;
+        }
+
+        #display {
+            background-color: #EEEDEB;
+            height: 100%;
+            width: 100%;
+            padding-top: 50px;
+        }
+
+        .mid {
+            background-color: #EEEDEB;
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+        #button {
+            background-color: #B4B4B8;
+            height: 100%;
+            width: 100%;
+            font-size: 22px;
+
+
+        }
+
+        .bottom {
+            height: 20%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr;
+
+        }
+
+        .tow {
+            height: 70%;
+            width: 100%;
+            background-color: #EEEDEB
+        }
+    </style>
+    <script>
+        function clearFunction() {
+            document.getElementById("display").innerHTML = "";
+        }
+        function displayFunctionPercentage() {
+            document.getElementById("display").innerHTML = "%";
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- main -->
+    <div class="main">
+        <!-- display -->
+        <div class="one " id="display"></div>
+        <div class="two">
+            <div class="mid">
+                <div><button id="button" onclick="clearFunction()">AC</button></div>
+                <div><button id="button">+/-</button></div>
+                <div><button id="button" onclick="displayFunctionPercentage()">%</button></div>
+                <div><button id="button">/</button></div>
+                <div><button id="button">7</button></div>
+                <div><button id="button">8</button></div>
+                <div><button id="button">9</button></div>
+                <div><button id="button">×</button></div>
+                <div><button id="button">4</button></div>
+                <div><button id="button">5</button></div>
+                <div><button id="button">6</button></div>
+                <div><button id="button">-</button></div>
+                <div><button id="button">1</button></div>
+                <div><button id="button">2</button></div>
+                <div><button id="button">3</button></div>
+                <div><button id="button">+</button></div>
+            </div>
+
+            <div class="bottom">
+                <div><button id="button">0</button></div>
+                <div><button id="button">1</button></div>
+                <div><button id="button">=</button></div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

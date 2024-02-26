@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #display {
+            background-color: pink;
+            height: 200px;
+            width: 500px;
+            font-size: 20px;
+        }
+
+        #submit {
+            width: 100px;
+            height: 60px;
+            background-color: palegreen;
+            margin-left: 10px;
+        }
+
+        .main {
+            background-color: aqua;
+            height: 60vh;
+            width: 60vw;
+            margin-left: 20%;
+        }
+
+        button {
+            background-color: lightpink;
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+    <script>
+        function add() {
+            let firstno = document.getElementById("numberone").value;
+            let secondno = document.getElementById("numbertwo").value;
+            let total = Number(firstno) + Number(secondno);
+            document.getElementById("display").innerHTML = "total is = " + total;
+
+        }
+
+        function subtraction() {
+            let firstno = document.getElementById("numberone").value;
+            let secondno = document.getElementById("numbertwo").value;
+            let total = Number(firstno) - Number(secondno);
+            document.getElementById("display").innerHTML = "total is = " + total;
+
+        }
+        function multiplication() {
+            let firstno = document.getElementById("numberone").value;
+            let secondno = document.getElementById("numbertwo").value;
+            let total = Number(firstno) * Number(secondno);
+            document.getElementById("display").innerHTML = "total is = " + total;
+
+        }
+        function division() {
+            let firstno = document.getElementById("numberone").value;
+            let secondno = document.getElementById("numbertwo").value;
+            let total = Number(firstno) / Number(secondno);
+            document.getElementById("display").innerHTML = "total is = " + total;
+
+        }
+        function clearfunction() {
+            document.getElementById("display").innerHTML = "";
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <h1 id="display"></h1>
+        <input type="text" id="numberone" value="0" style="width: 150px;
+            height: 38px;" />
+        <input type="text" id="numbertwo" value="0" style="width: 150px;
+            height: 38px;" />
+        <button id="sumbit" onclick="add()">Add</button>
+        <button id="sumbit" onclick="subtraction()">Sub</button>
+        <button id="sumbit" onclick="multiplication()">multiply</button>
+        <button id="sumbit" onclick="division()">division</button>
+        <button id="sumbit" onclick="clearfunction()">Clear</button>
+
+    </div>
+</body>
+
+</html>

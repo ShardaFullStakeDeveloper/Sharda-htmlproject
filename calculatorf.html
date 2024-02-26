@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- title -->
+    <title>Calculator</title>
+    <!-- styling -->
+    <style>
+        /* main */
+        .main {
+            background-color: #242629;
+            height: 80vh;
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            margin-left: 20%;
+            margin-top: 80px;
+        }
+
+        /* display */
+        .top {
+            background-color: #636569;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* row section */
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 100%;
+            width: 100%;
+            background-color: #989ca3;
+
+        }
+
+        /* one */
+        .one {
+            background-color: #61656b;
+            border-style: solid;
+            border-width: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        /* button */
+        button {
+            height: 100%;
+            width: 100%;
+            background-color: #3c3d40;
+            font-size: 22px;
+          
+        }
+       
+
+        /* last button color */
+        .color {
+            background-color: #f57914;
+        }
+
+        /* last row */
+        .lastrow {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+           background-color:  #3c3d40;
+           height: 100%;
+           width: 100%;
+        }
+/* 4th button color */
+.color{
+    background-color: #f29a02;
+}
+    </style>
+</head>
+
+<body>
+    <!-- main -->
+    <div class="main">
+        <!-- top -->
+        <div class="top"></div>
+        <!-- first row -->
+        <div class="row">
+            <!-- 1st button -->
+            <div class="one"><button>AC</button></div>
+            <!-- 2nd button -->
+            <div class="one"><button>+/-</button></div>
+            <!-- 3rd button -->
+            <div class="one"><button>%</button></div>
+            <!-- 4th button -->
+            <div class="one"><button class="color">/</button></div>
+     
+        </div>
+        <!-- 2nd row -->
+        <div class="row">
+            <!-- 1st button -->
+            <div class="one"><button>7</button></div>
+            <!-- 2nd button -->
+            <div class="one"><button>8</button></div>
+            <!-- 3rd button -->
+            <div class="one"><button>9</button></div>
+            <!-- 4th button -->
+            <div class="one"><button class="color">×</button></div>
+        </div>
+        <!-- 3rd row -->
+        <div class="row">
+            <!-- 1st button -->
+            <div class="one"><button>4</button></div>
+            <!-- 2nd button -->
+            <div class="one"><button>5</button></div>
+            <!-- 3rd button -->
+            <div class="one"><button>6</button></div>
+            <!-- 4th button -->
+            <div class="one"><button class="color">+</button></div>
+        </div>
+        <!-- 4th row -->
+        <div class="row">
+            <!-- 1st button -->
+            <div class="one"><button>1</button></div>
+            <!-- 2nd button -->
+            <div class="one"><button>2</button></div>
+            <!-- 3rd button -->
+            <div class="one"><button>3</button></div>
+            <!-- 4th button -->
+            <div class="one"><button class="color">-</button></div>
+        </div>
+        <!-- 5th row -->
+        <div class="lastrow">
+            <div class="one"><button>0</button></div>
+            <!-- 2nd button -->
+            <div class="one"><button>00</button></div>
+            <!-- 3rd button -->
+            <div class="one"><button class="color">=</button></div>
+        </div>
+    
+    </div>
+</body>
+
+</html>
